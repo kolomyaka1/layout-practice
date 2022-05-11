@@ -1,0 +1,139 @@
+:root {
+  /* Colors */
+  --primary-text-color: #616161;
+  --black-color: #000000;
+  --background-color: #FAFBFD;
+  --white-color: #FFFFFF;
+  --pink-color: #EC5863;
+  --blue-button-color: #4285F4;
+  --text-button-color: #FCFDFE;
+
+  /* Font Weight */
+  --extra-bold-font-weight: 800;
+  --bold-font-weight: 700;
+  --regular--font-weight: 400;
+
+  /* Font and Typography */
+  --base-font-family: 'Rubik', Arial;
+  --small-text-font-size: 10px;
+  --base-text-font-size: 12px;
+  --title-font-size: 44px;
+  --title-line-height: 55.44px;
+  --base-line-height: 16.62px;
+}
+
+.button {
+  color: var(--text-button-color);
+  padding: 14px 29px 14px 29px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.button__primary {
+  background-color: var(--pink-color);
+}
+
+.button__secondary {
+  background-color: var(--blue-button-color);
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  margin: 0;
+  padding: 0;
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+html, body {
+  height: 100%;
+  line-height: 1;
+}
+
+body {
+  font-family: var(--base-font-family);
+  font-size: var(--base-text-font-size);
+  color: var(--primary-text-color);
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.container {
+  max-width: 1057px;
+  margin: 0 auto;
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 114px;
+}
+
+.header__logo {
+  display: flex;
+  align-items: center;
+}
+
+.header__title {
+  font-size: 18px;
+  font-weight: var(--bold-font-weight);
+  color: var(--black-color);
+  line-height: 21.28px;
+}
+
+.header__title span {
+  color: var(--pink-color);
+}
+
+.header__logo img {
+  width: 40px;
+  height: 40px;
+}
+
+.header__menu {
+  flex: 1 1 auto;
+}
+
+.header__button {
+  flex: 0 0 252px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.menu {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.menu__list {
+  display: flex;
+}
+
+
+main {
+  flex: 1 1 auto;
+}
